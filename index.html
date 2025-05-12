@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhat Computers & Stationery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Sidebar Social Icons */
+    .sidebar-social {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      padding: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      box-shadow: -2px 2px 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .sidebar-social a {
+      color: #0033cc;
+      font-size: 22px;
+      margin: 10px 5px;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .sidebar-social a:hover {
+      color: #007bff;
+      transform: scale(1.2);
+    }
+
+    header {
+      background-color: #0033cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-height: 80px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #002db3;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      padding: 8px 0;
+    }
+
+    .services li i {
+      color: #0033cc;
+      margin-right: 10px;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      font-size: 24px;
+      padding: 15px;
+      border-radius: 50%;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      animation: moveUpDown 1.5s infinite alternate;
+    }
+
+    @keyframes moveUpDown {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebe5d;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar Social Icons - Right Center -->
+  <div class="sidebar-social">
+    <a href="https://www.facebook.com/share/1BNRBVhSsr/" target="_blank" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/bhat.computer?igsh=cGpsZHE1dXpwdnB0" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  <header>
+    <img src="logo.jpg" alt="Logo" />
+    <h1>Bhat Computers & Stationery</h1>
+    <p>Kujjar, Frisal, Kulgam | Call: <a href="tel:9622971315" style="color: white;">9622971315</a></p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+  </nav>
+
+  <div class="container">
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li><i class="fas fa-copy"></i> Photostat</li>
+        <li><i class="fas fa-print"></i> Computer Printing</li>
+        <li><i class="fas fa-file-alt"></i> Online Forms</li>
+        <li><i class="fas fa-id-card"></i> Passport & PAN Card Services</li>
+        <li><i class="fas fa-plane"></i> Air & Train Ticket Booking</li>
+        <li><i class="fas fa-bolt"></i> Electricity Bill Payments</li>
+        <li><i class="fas fa-money-bill-wave"></i> DMT (Money Transfer)</li>
+        <li><i class="fas fa-atm"></i> Micro ATM Services</li>
+      </ul>
+    </section>
+  </div>
+
+  <a class="whatsapp-btn" href="https://wa.me/919622971315" target="_blank" title="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    &copy; <span id="year"></span> Bhat Computers & Stationery. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
